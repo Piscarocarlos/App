@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, ::after, ::before{
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("../fonts/bootstrap-icons.woff"), url('../fonts/bootstrap-icons.woff2');
+}
+
+body{
+    background: rgb(193,211,249);
+    background: linear-gradient(90deg, rgba(193,211,249,1) 9%, rgba(221,233,243,1) 46%, rgba(250,240,225,1) 84%);
+}
+
+.img-back{
+    background-image: url('../images/meteo_800x600.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+h1{
+    font-size: 6em;
+}
