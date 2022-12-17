@@ -2,8 +2,8 @@
 const API_ID = "b5f558462160da78810acd0bb997a9fd";
 
 window.navigator.geolocation.getCurrentPosition((data)=>{
-    let lat = -15.7937308;
-    let lon = -47.881569;
+    let lat = data.coords.latitude;
+    let lon = data.coords.longitude;
 
     axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_ID}`)
     .then((res)=>{
